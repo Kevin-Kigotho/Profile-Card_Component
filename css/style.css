@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+:root {
+    --dark-cyan: hsl(185, 75%, 39%); /*Main Background Color*/
+    --very-dark-desaturated-blue: hsl(229, 23%, 23%); /**/
+    --dark-grayish-blue: hsl(227, 10%, 46%);
+    --dark-gray: hsl(0, 0%, 59%);
+
+    --secondary-font-color: #8b8a8a;
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 1rem; /*18px*/
+}
+
+
+
+main {
+    background-color: var(--dark-cyan);
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    /* width: 100vw; */
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+main > img {
+    position: absolute;
+    /* z-index: ; */
+}
+
+main .top {
+    top: 50%;
+    left: 50%;
+    transform: translate(-98%, -100%);
+}
+
+main .bottom {
+    bottom: 50%;
+    right: 50%;
+    transform: translate(98%, 100%);
+}
+
+.card {
+    /* border: 1px solid #000; */
+    border-radius: 10px;
+    overflow: hidden;
+    z-index: 2;
+    max-width: 90%;
+    box-shadow: 0 0 10px #7a7a7a;
+    margin-bottom: 1rem;
+}
+
+.image {
+    height: 145px;
+}
+
+.image img {
+    /* width: 100%; */
+    min-height: 100%;
+}
+
+.profile-details {
+    background-color: #fff;
+}
+
+.profile-image {
+    position: relative;
+    padding: 3.75rem 0 1.875rem;
+    text-align: center;
+}
+
+.profile-image img {
+    position: absolute;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    border: 5px solid #fff;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.profile-image .age,
+.profile-image .location {
+    color: var(--secondary-font-color);
+    font-weight: 400;
+}
+
+.profile-image .location {
+    margin-top: .5rem;
+}
+
+.profile-activity {
+    border-top: 1px solid #e0e0e0;
+    padding: 1.3rem 0;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    
+}
+
+.profile-activity .statistic{
+    font-weight: 700;
+}
+
+.profile-activity .category {
+    margin-top: .3rem;
+    font-size: .7rem;
+    letter-spacing: 1px;
+    color: var(--secondary-font-color);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
